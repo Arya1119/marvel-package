@@ -241,6 +241,7 @@ li {
 }
 .show{
   display: block;
+  z-index: 2;
 }
 .hide{
   display: none;
