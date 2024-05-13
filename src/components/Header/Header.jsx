@@ -160,7 +160,7 @@ const Header = () => {
                 <a
                   href="#"
                   className="mean-expand"
-                  style={{ width: "10%", fontSize: "18px" }}
+                  style={{ width: "10%", fontSize: "17px" }}
                   onClick={toggleSubMenu}
                 >
                   +
