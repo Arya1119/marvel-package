@@ -4,6 +4,7 @@ import Slider from '../Slider/Slider'
 import About from '../About/About'
 import Gallery from '../Gallery/Gallery'
 import Feature from '../Feature/Feature'
+import FormSection from '../FormSection/FormSection'
 const Home = () => {
   return (
     <main>
@@ -11,6 +12,7 @@ const Home = () => {
        <About/>
        <Gallery/> 
        <Feature/>
+       <FormSection/>
     </main>
   )
 }

@@ -1,0 +1,82 @@
+.formBox{
+    background-color: #f9f9f9;
+    padding: 10rem 0;
+}
+input{
+    height: 40px;
+    border: none;
+}
+.formBox form {
+    display: flex;
+    flex-direction: column;
+    width: 671px;
+    margin:  auto;
+}
+
+.formBox form .title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px auto;
+    width: 432px;
+}
+
+.formBox form .title p {
+    color: #777777;
+}
+.formBox form textarea{
+    border: none;
+}
+.formBox form button{
+    height: 57px;
+    width: 193px;
+    border-radius: 10px;    
+    border: none;
+    background-image: -webkit-linear-gradient(-51deg, #eb120a 0%, #ff5e14 99%);
+    color: #ffffff;
+    margin: 20px 0;
+}
+.formBox form .name{
+    width: 671px;
+}
+.formBox form .name{
+    display: flex;
+    flex-direction: column;
+   
+}
+.formBox form .name{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.formBox form .name p input{
+    width: 320px;
+}
+@media screen and (max-width:740px){
+    .formBox form .title {
+        width: 50%;
+    }
+    .formBox form .title h1{
+        font-size: 4.5vw;
+    }
+    .formBox form .title p{
+        font-size: 2vw;
+    }
+    .formBox form {
+        width: 90%;
+    }
+    .formBox form .name {
+        width: 100%;
+    }
+    .formBox form .name p{
+        width: 45%;
+    }
+    .formBox form .name p input {
+        width: 100%;
+    }
+    .formBox form button {
+        width: 27%;
+        
+    font-size: 2.2vw;
+    }
+}

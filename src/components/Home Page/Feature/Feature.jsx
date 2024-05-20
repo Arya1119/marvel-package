@@ -83,7 +83,7 @@ const Feature = () => {
               <h1>06</h1>
               <span className="sline">Our Skills</span>
               <h2>
-                Our Professiona
+                Our Professional
                 <br /> Experience & Skills
               </h2>
             </div>
