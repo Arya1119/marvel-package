@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Header.css";
-// import WebLogo from "../../assets/Marvel-Pack-Industries-Logo.png";
-import  WebLogo from './../../assets/ImageLogo.png'
+import WebLogo from "../../assets/Marvel-Pack-Industries-Logo.png";
+// import  WebLogo from './../../assets/ImageLogo.png'
 import WebLine from "../../assets/line-1.png";
 import PhoneIcon from "./../../assets/phone-call.png";
 import {  NavLink } from "react-router-dom";
