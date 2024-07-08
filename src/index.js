@@ -5,6 +5,8 @@ import App from './App';
 import Home from './components/Home Page/Home/Home';
 import reportWebVitals from './reportWebVitals';
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromChildren } from 'react-router-dom'; // Importing routing-related components from react-router-dom
+import AboutUs from './components/AboutUs Page/AboutUs/AboutUs';
+import ProductPage from './components/Product Page/ProductPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter(
@@ -13,6 +15,8 @@ const router = createBrowserRouter(
     // Defining routes
     <Route path='/' element={<App/>}> {/* Root route */}
       <Route path='' element={<Home/>} /> {/* Home route */}
+      <Route path='about-us' element={<AboutUs/>} /> {/* Home route */}
+      <Route path='products' element={<ProductPage/>} /> {/* Home route */}
     </Route>
   )
 );

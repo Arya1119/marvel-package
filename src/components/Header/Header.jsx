@@ -4,7 +4,7 @@ import WebLogo from "../../assets/Marvel-Pack-Industries-Logo.png";
 // import  WebLogo from './../../assets/ImageLogo.png'
 import WebLine from "../../assets/line-1.png";
 import PhoneIcon from "./../../assets/phone-call.png";
-import {  NavLink } from "react-router-dom";
+import {  Link, NavLink } from "react-router-dom";
 
 const MobileSubmenuItem = ({ text }) => {
   return (
@@ -75,9 +75,11 @@ const Header = () => {
                 </NavLink>
               </li>
               <li>
-                <a className="nav-link" href="#">
+                <NavLink  className={({ isActive }) =>
+                    `nav-link ${isActive ? "isActive" : ""}`
+                  } to="/about-us">
                   About Us
-                </a>
+                </NavLink>
               </li>
               <li>
                 <a className="nav-link" href="#">
@@ -85,9 +87,11 @@ const Header = () => {
                 </a>
               </li>
               <li className="menu">
-                <a className="nav-link" href="#">
+                <NavLink className={({ isActive }) =>
+                    `nav-link ${isActive ? "isActive" : ""}`
+                  } to="/products">
                   Product
-                </a>
+                </NavLink>
                 <ul className="sub-menu">
                   {subMenu.map((item) => {
                     return <SubmenuItem text={item} />;
@@ -145,19 +149,23 @@ const Header = () => {
               </li>
 
               <li className="mobile-menu-item">
-                <a href="#">About Us</a>
+                <Link to="/about-us"  className={({ isActive }) =>
+                    `${isActive ? "isActive" : ""}`
+                  } >About Us</Link>
               </li>
               <li className="mobile-menu-item">
                 <a href="#">Infrastructure</a>
               </li>
               <li className="mobile-menu-item">
-                <a
-                  href="#"
-                  className="menu-item-product"
+                <NavLink
+                  to="/products"
+                  className={({ isActive }) =>
+                    `${isActive ? "isActive" : ""}`
+                  }
                   style={{ width: "100%" }}
                 >
                   Product
-                </a>
+                </NavLink>
                 <a
                   href="#"
                   className="mean-expand"
