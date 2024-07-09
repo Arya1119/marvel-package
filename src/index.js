@@ -7,16 +7,20 @@ import reportWebVitals from './reportWebVitals';
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromChildren } from 'react-router-dom'; // Importing routing-related components from react-router-dom
 import AboutUs from './components/AboutUs Page/AboutUs/AboutUs';
 import ProductPage from './components/Product Page/ProductPage';
+import InfrastructurePage from './components/Infrastructure Page/InfrastructurePage';
+import ContactUsPage from './components/ContactUs Page/ContactUsPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter(
   // Creating routes from children components
   createRoutesFromChildren(
     // Defining routes
-    <Route path='/' element={<App/>}> {/* Root route */}
-      <Route path='' element={<Home/>} /> {/* Home route */}
-      <Route path='about-us' element={<AboutUs/>} /> {/* Home route */}
-      <Route path='products' element={<ProductPage/>} /> {/* Home route */}
+    <Route path='/' element={<App/>}> 
+      <Route path='' element={<Home/>} /> 
+      <Route path='about-us' element={<AboutUs/>} /> 
+      <Route path='products' element={<ProductPage/>} /> 
+      <Route path='infrastructure' element={<InfrastructurePage/>} />
+      <Route path='contact-us' element={<ContactUsPage/>} />
     </Route>
   )
 );

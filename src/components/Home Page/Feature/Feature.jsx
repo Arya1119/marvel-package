@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Feature.css";
-import AirPlaneImg from "./../../../assets/airplane.png";
+import { FaRegPaperPlane } from "react-icons/fa";
+
 
 const ProgressBar = ({ progress, barTitle }) => {
   // Calculate the width of the progress bar dynamically based on the progress value
@@ -99,7 +100,7 @@ const Feature = () => {
                 })}
               </div>
               <a className="btn" href="#">
-                GET A QUOTE <img src={AirPlaneImg} alt="airplane image" />
+                GET A QUOTE  <FaRegPaperPlane/>
               </a>
             </div>
           </div>

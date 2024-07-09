@@ -1,50 +1,56 @@
-import React from 'react'
-import "./Footer.css"
-import WebLogo from './../../assets/ImageLogo.png'
+import React from 'react';
+import "./Footer.css";
+import WebLogo from './../../assets/ImageLogo.png';
+import LocationIcon from "./../../assets/location.png";
+import { Link } from 'react-router-dom';
+import { FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { IoMdCall } from "react-icons/io";
 
 const Footer = () => {
   return (
-
-<div className="footer-header">
-<div className="footer">
-    <div className="box1">
-        <h1>Logo</h1>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-        <span>@Company.com</span>
+    <div className="footer-container">
+      <div className="footer">
+        <div className="footer-section logo-section">
+          <img src={WebLogo} alt="Logo" className="footer-logo" />
+        </div>
+        <div className="footer-section">
+          <h2>Company</h2>
+          <Link to="/about-us">About Company</Link>
+          <Link to="/products">Products</Link>
+          <Link to="/infrastructure">Infrastructure</Link>
+          <Link to="/contact-us">Contact Us</Link>
+        </div>
+        <div className="footer-section">
+          <h2>Contacts</h2>
+          <a className='contact-item' href="tel:+91-74860 22431">
+            <IoMdCall />
+            <span>+91-74860 22431</span>
+          </a>
+          <a className='contact-item' href="tel:+91-74860 22431">
+            <IoMdCall />
+            <span>+91-74860 22431</span>
+          </a>
+        </div>
+        <div className="footer-section">
+          <h2>Office</h2>
+          <a className='contact-item' href="#">
+            <img src={LocationIcon} alt="location icon" />
+            <span>218, Kasturi Complex, Nr. Vishala Supreme, Opposite Torrent Substation, Sp Ring Road, Nikol, Ahmedabad-382350, Gujarat, India</span>
+          </a>
+        </div>
+        <div className="footer-social">
+          <a href="#"><FaFacebook /></a>
+          <a href="#"><FaInstagram /></a>
+          <a href="#"><FaXTwitter /></a>
+        </div>
+      </div>
+      <hr />
+      <div className="footer-bottom">
+        <span>&copy; {new Date().getFullYear()} Company. All rights reserved.</span>
+      </div>
     </div>
-    <div className="box2">
-        <span id="ft1">About us</span>
-        <span>Company</span>
-        <span>Portfolio</span>
-        <span>Carees</span>
-        <span>Contact us</span>
-    </div>
-    <div className="box3">
-        <span id="ft2">Contact us</span>
-        <span>Company</span>
-        <span>Portfolio</span>
-        <span>Carees</span>
-        <span>Contact us</span>
-    </div>
-    <div className="box4">
-        <span id="ft3">Contact us</span>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-            <span>+9000 0000 000</span>
-    </div>
-    <div className="follow">
-        {/* <img src="../../assets/home/facebook 1.png" alt="facebook"/>
-        <img src="../../assets/home/instagram 1.png" alt="instagram"/>
-        <img src="../../assets/home/twitter 1.png" alt="twitter" />
-        <img src="../../assets/home/linkedin 1.png" alt="linkedin"/> */}
-    
-    </div>
-    </div>
-    <hr/>
-<div className="cp">
-    <span>Copyright ® {new Date().getFullYear()} Company All rights Recerved</span>
-</div>
-</div>
-  )
+  );
 }
 
-export default Footer
+export default Footer;

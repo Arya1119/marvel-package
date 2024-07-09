@@ -184,7 +184,7 @@
     vertical-align: middle;
     text-decoration: none;
 }
-.progress-bar-text> .btn >img {
+.progress-bar-text> .btn > svg {
     position: relative;
     top: 3px;
     left: 7px;

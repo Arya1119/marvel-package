@@ -1,7 +1,8 @@
 import React from 'react'
 import "./About.css"
 import AboutUsImg from './../../../assets/home-about-03.png'
-import AirPlaneImg from './../../../assets/airplane.png'
+// import AirPlaneImg from './../../../assets/airplane.png'
+import { FaRegPaperPlane } from "react-icons/fa";
 
 const About = () => {
   return (
@@ -22,7 +23,7 @@ const About = () => {
                     <p>Our product range includes Paper Popcorn Box, Printed Cake Box, Corrugated Pizza Box, Ice Cream Packaging Box, French Fry Box, Corrugated Handle Box, 7 Ply Corrugated Box, Die Cut Corrugated Box, UN Approved Corrugated Box, Laminated Corrugated Box, Incense Stick Box and much more.</p>
                 </div>
                 <div className="about-button">
-                    <a className='btn' href="#">LERN MORE <img src={AirPlaneImg} alt="airplane image"  /></a>
+                    <a className='btn' href="#">LERN MORE <FaRegPaperPlane /></a>
                 </div>
             </div>
 

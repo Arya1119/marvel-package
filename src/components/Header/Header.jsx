@@ -3,23 +3,23 @@ import "./Header.css";
 import WebLogo from "../../assets/Marvel-Pack-Industries-Logo.png";
 // import  WebLogo from './../../assets/ImageLogo.png'
 import WebLine from "../../assets/line-1.png";
-import PhoneIcon from "./../../assets/phone-call.png";
 import {  Link, NavLink } from "react-router-dom";
+import { IoCallOutline } from "react-icons/io5";
 
-const MobileSubmenuItem = ({ text }) => {
-  return (
-    <li className="submenu-item">
-      <a href="#">{text}</a>
-    </li>
-  );
-};
-const SubmenuItem = ({ text }) => {
-  return (
-    <li className="menu-item">
-      <a href="#">{text}</a>
-    </li>
-  );
-};
+// const MobileSubmenuItem = ({ text }) => {
+//   return (
+//     <li className="submenu-item">
+//       <a href="#">{text}</a>
+//     </li>
+//   );
+// };
+// const SubmenuItem = ({ text }) => {
+//   return (
+//     <li className="menu-item">
+//       <a href="#">{text}</a>
+//     </li>
+//   );
+// };
 
 const Header = () => {
   const [menuVisible, setMenuVisible] = useState(false);
@@ -82,9 +82,11 @@ const Header = () => {
                 </NavLink>
               </li>
               <li>
-                <a className="nav-link" href="#">
+                <NavLink className={({ isActive }) =>
+                    `nav-link ${isActive ? "isActive" : ""}`
+                  }  to="/infrastructure">
                   Infrastructure
-                </a>
+                </NavLink>
               </li>
               <li className="menu">
                 <NavLink className={({ isActive }) =>
@@ -92,13 +94,13 @@ const Header = () => {
                   } to="/products">
                   Product
                 </NavLink>
-                <ul className="sub-menu">
+                {/* <ul className="sub-menu">
                   {subMenu.map((item) => {
                     return <SubmenuItem text={item} />;
                   })}
-                </ul>
+                </ul> */}
               </li>
-              <li>
+              {/* <li>
                 <a className="nav-link" href="#">
                   E-Brochure
                 </a>
@@ -107,18 +109,21 @@ const Header = () => {
                 <a className="nav-link" href="#">
                   Clients
                 </a>
-              </li>
+              </li> */}
               <li>
-                <a className="nav-link" href="#">
+                <NavLink className={({ isActive }) =>
+                    `nav-link ${isActive ? "isActive" : ""}`
+                  } to="/contact-us">
                   Contact Us
-                </a>
+                </NavLink>
               </li>
             </ul>
           </nav>
           <div className="header-num">
             <img src={WebLine} alt="line" />
             <div className="num-section">
-              <img className="phoneicon" src={PhoneIcon} alt="phone icon" />
+              {/* <img className="phoneicon" src={PhoneIcon} alt="phone icon" /> */}
+              <IoCallOutline className="phoneicon"/>
               <span>+91 84889 63484</span>
             </div>
           </div>
@@ -149,12 +154,14 @@ const Header = () => {
               </li>
 
               <li className="mobile-menu-item">
-                <Link to="/about-us"  className={({ isActive }) =>
+                <NavLink to="/about-us"  className={({ isActive }) =>
                     `${isActive ? "isActive" : ""}`
-                  } >About Us</Link>
+                  } >About Us</NavLink>
               </li>
               <li className="mobile-menu-item">
-                <a href="#">Infrastructure</a>
+                <NavLink className={({ isActive }) =>
+                    `${isActive ? "isActive" : ""}`
+                  }  to="/infrastructure">Infrastructure</NavLink>
               </li>
               <li className="mobile-menu-item">
                 <NavLink
@@ -166,7 +173,8 @@ const Header = () => {
                 >
                   Product
                 </NavLink>
-                <a
+
+                {/* <a
                   href="#"
                   className="mean-expand"
                   style={{ width: "10%", fontSize: "17px" }}
@@ -179,16 +187,18 @@ const Header = () => {
                   {subMenu.map((item) => {
                     return <MobileSubmenuItem text={item} />;
                   })}
-                </ul>
+                </ul> */}
               </li>
-              <li className="mobile-menu-item">
+              {/* <li className="mobile-menu-item">
                 <a href="#">E-Brochure</a>
               </li>
               <li className="mobile-menu-item">
                 <a href="#">Clients</a>
-              </li>
+              </li> */}
               <li className="mobile-menu-item">
-                <a href="#">Contact Us</a>
+                <NavLink className={({ isActive }) =>
+                    `${isActive ? "isActive" : ""}`
+                  }  to="/contact-us">Contact Us</NavLink>
               </li>
             </ul>
           </nav>

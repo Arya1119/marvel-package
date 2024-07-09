@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./Skill.css";
-import AirPlaneImg from "./../../../assets/airplane.png";
+// import AirPlaneImg from "./../../../assets/airplane.png";
+import { FaRegPaperPlane } from "react-icons/fa";
+
 
 const ProgressBar = ({ progress, barTitle }) => {
   // Calculate the width of the progress bar dynamically based on the progress value
@@ -95,7 +97,7 @@ const Skill = () => {
                 })}
               </div>
               <a className="btn" href="#">
-                GET A QUOTE <img src={AirPlaneImg} alt="airplane image" />
+                GET A QUOTE <FaRegPaperPlane/>
               </a>
             </div>
           </div>
@@ -105,7 +107,7 @@ const Skill = () => {
           className="feature-bg-image"
           style={{
             backgroundImage: `url("https://www.marvelpack.com/wp-content/uploads/2021/05/skill.jpg")`,
-            height: "40rem",
+            height: "46rem",
           }}
         ></div>
       </div>
