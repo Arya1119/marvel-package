@@ -1,0 +1,47 @@
+.single-skill{
+    margin-bottom: 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.bar-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bar-title h4 {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+.bar-title span {
+    font-size: 14px; /* Adjust font size to your preference */
+    color: #999; /* Adjust color to your preference */
+    margin-left: 10px; /* Adjust margin to your preference */
+}
+
+
+.progress {
+    border-radius: 4px;
+    height: 5px;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    position: relative;
+}
+
+.progress-bar {
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    background-color: #EEAE1D;
+    transition: width 0.1s ease-in-out;
+}
+
+.bar-title span {
+    font-size: 14px;
+    color: black;
+    font-weight: 700;
+}

@@ -1,0 +1,26 @@
+.btn{
+    color: #ffffff;
+    display: inline-flex;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1;
+    padding: 26px 54px 26px 50px;
+    position: relative;
+    text-transform: uppercase;
+    background-image: -webkit-linear-gradient(-51deg, #eeae1d 0%, #ff5e14 99%);
+    border-radius: 50px;
+    border: none;
+    transition: 0.3s;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    text-decoration: none;
+}
+.btn > svg{
+
+    position: relative;
+    top: 0px;
+    left: 7px;
+    height: 20px;
+    width: auto;
+}

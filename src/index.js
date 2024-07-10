@@ -2,17 +2,19 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import Home from './components/Home Page/Home/Home';
+import Home from './pages/Home Page/Home/Home';
 import reportWebVitals from './reportWebVitals';
-import { Route, RouterProvider, createBrowserRouter, createRoutesFromChildren } from 'react-router-dom'; // Importing routing-related components from react-router-dom
-import AboutUs from './components/AboutUs Page/AboutUs/AboutUs';
-import ProductPage from './components/Product Page/ProductPage';
-import InfrastructurePage from './components/Infrastructure Page/InfrastructurePage';
-import ContactUsPage from './components/ContactUs Page/ContactUsPage';
+import { Route, RouterProvider, createBrowserRouter, createRoutesFromChildren } from 'react-router-dom'; // Importing routing-related pages from react-router-dom
+import AboutUs from './pages/AboutUs Page/AboutUs/AboutUs';
+import ProductPage from './pages/Product Page/ProductPage';
+import InfrastructurePage from './pages/Infrastructure Page/InfrastructurePage';
+import ContactUsPage from './pages/ContactUs Page/ContactUsPage';
+import { ChakraProvider } from '@chakra-ui/react'
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter(
-  // Creating routes from children components
+  // Creating routes from children pages
   createRoutesFromChildren(
     // Defining routes
     <Route path='/' element={<App/>}> 
@@ -26,7 +28,9 @@ const router = createBrowserRouter(
 );
 root.render(
   <React.StrictMode>
+    <ChakraProvider>
     <RouterProvider router={router}/>
+    </ChakraProvider>
   </React.StrictMode>
 );
 

@@ -1,0 +1,41 @@
+.contact-info{
+    width: 100%;
+    background-image: url("./../../../assets/team-img.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+.contact-info-container{
+    margin: auto ;
+    width: 100%;
+    display: grid;
+    place-items:center;
+}
+.contact-info-container > span {
+    font-size: 24px;
+    font-weight: 700;
+    border-bottom: 1px solid #ffffff;
+    color: #ffffff;
+    text-align: center;
+}
+
+.contact-info-container >  h1 {
+    font-size: 36px !important;
+    color: #ffffffd6 !important;
+    letter-spacing: -0.3px;
+    line-height: 1.08;
+    margin-top: 39px !important;
+    margin-bottom: 30px !important;
+    text-align: center;
+}
+
+.contact-info-container > p {
+    font-size: 18px;
+    line-height: 30px;
+    color: #ffffff;
+    padding: 0 50px;
+    margin-bottom: 36px;
+    text-align: center;
+}

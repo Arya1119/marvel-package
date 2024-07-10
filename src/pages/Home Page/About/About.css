@@ -1,0 +1,127 @@
+.about {
+    width: 100%;
+    font-family: inherit;
+    padding: 20px 0;
+  }
+  
+  .container {
+    max-width: 1169px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 15px;
+  }
+  
+  .about-us-img {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .about-us-img > img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .about-us-wrapper {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .section-title {
+    position: relative;
+  }
+  
+  .section-title h1 {
+    position: absolute;
+    z-index: 1;
+    font-size: 80px;
+    -webkit-text-stroke-width: 1px;
+    line-height: 1;
+    opacity: 0.07;
+    top: -16px;
+    left: 0;
+    margin-bottom: 0;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .section-title span {
+    color: #EEAE1D;
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 20px;
+  }
+  
+  .section-title .sline {
+    position: relative;
+    padding-left: 75px;
+    top: 15px;
+  }
+  
+  .section-title .sline::before {
+    position: absolute;
+    background: #EEAE1D;
+    content: "";
+    height: 3px;
+    width: 45px;
+    left: 0;
+    bottom: 11px;
+  }
+  
+  .section-title h2 {
+    font-size: 42px;
+    margin-top: 22px;
+    letter-spacing: -0.3px;
+  }
+  
+  .about-us-text {
+    position: relative;
+  }
+  
+  .about-us-text p {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-right: 32px;
+    margin-bottom: 36px;
+    line-height: 28px;
+  }
+  
+  .about-button {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  @media (max-width: 880px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .about-us-img,
+    .about-us-wrapper {
+      width: 100%;
+    }
+  
+    .section-title h1 {
+      font-size: 60px;
+    }
+  
+    .section-title h2 {
+      font-size: 36px;
+    }
+  
+    .about-us-text p {
+      margin-right: 0;
+    }
+  
+    .about-button {
+      justify-content: center;
+    }
+  }
+  

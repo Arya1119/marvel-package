@@ -1,0 +1,62 @@
+.banner-container{
+    background-image: url("./../../assets/banner-img.jpg");
+    padding-bottom: 70px;
+    padding-top: 70px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.banner-info{
+    max-width:1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-info > h1 {
+    font-size: 50px;
+    margin-bottom: 12px;
+    text-transform: capitalize;
+    line-height: 1;
+    color: #ffffff;
+}
+
+.banner-nav > li{
+    display: inline-block;
+    position: relative;
+    list-style: none;
+    padding: 0 15px;
+}
+
+
+.banner-nav li a {
+    font-size: 16px;
+    color: #EEAE1D;
+    text-transform: capitalize;
+    transition: all 0.3s ease 0s;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.banner-nav li span {
+    font-size: 16px;
+    position: relative;
+    color: #ffffff;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.banner-nav li span::before{
+    position: absolute;
+    font-size: 18px;
+    top: -4px;
+    content: "»";
+    display: inline-block;
+    padding-bottom: 0;
+    left: -19px;
+    font-family: "Font Awesome 5 Pro";
+    color: #fff;
+}
