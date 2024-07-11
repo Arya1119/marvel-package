@@ -1,7 +1,7 @@
 .hero-section{
     position: relative;
     background-color: #6EC1E4;
-    background-image: url(https://www.marvelpack.com/wp-content/uploads/2021/05/Infrastructure-img.jpg);
+    background-image: url("./../../../assets/infrastructure.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -43,7 +43,7 @@
 }
 .h-container > .seperatore{
 border-style: solid;
-border-color: #FF5E14;
+border-color: #EEAE1D;
 border-width: 2px;
 width: 38%;
 margin: 30px 0;

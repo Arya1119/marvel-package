@@ -22,7 +22,7 @@ const Header = () => {
     <Box bg="white" px={4} boxShadow="sm" position="relative" w="100%" zIndex="1000" >
       <Flex h={16} alignItems="center" justifyContent="space-between" fontWeight={"500"}>
         <Box>
-          <Image src={WebLogo} alt="logo" boxSize="50px" />
+          <Image src={WebLogo} alt="logo" boxSize="63px" />
         </Box>
         <HStack spacing={8} alignItems="center" display={{ base: "none", md: "flex" }} >
           <NavLink to="/" >Home</NavLink>
@@ -34,7 +34,7 @@ const Header = () => {
         <Flex alignItems="center">
           <HStack spacing={4} display={{ base: "none", md: "flex" }}>
             <IoCallOutline size="24px" color="#EEAE1D" />
-            <Text fontSize="lg" fontWeight="bold">+91 84889 63484</Text>
+            <Text fontSize="lg" fontWeight="bold">+91 96013 13243</Text>
           </HStack>
           <IconButton
             size="md"

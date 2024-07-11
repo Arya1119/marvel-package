@@ -23,7 +23,7 @@
     bottom: -6px;
     width: 200px;
     height: 3px;
-    background-color: #ff5e14;
+    background-color: #EEAE1D;
   }
   
   .c-section {
@@ -54,7 +54,7 @@
   }
   
   .c-item:hover {
-    color: #CC6600;
+    color: #EEAE1D;
     transform: translateX(5px);
   }
   

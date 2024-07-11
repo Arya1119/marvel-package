@@ -26,7 +26,7 @@
   transform: translateX(-50%);
   width: 50px;
   height: 3px;
-  background-color: #CC6600;
+  background-color: #EEAE1D;
 }
 
 .contact-form form {
@@ -58,7 +58,7 @@
 
 .contact-form button {
   padding: 12px;
-  background-color: #CC6600;
+  background-image: -webkit-linear-gradient(-51deg, #eeae1d 0%, #ff5e14 99%);
   color: #fff;
   border: none;
   border-radius: 5px;

@@ -13,14 +13,14 @@ const ContactInfo = () => {
       <div className="c-section">
         <h3>Contact Department</h3>
         <div className="c-list">
-          <a className="c-item" href="tel:+91-74860 22431">
+          <a className="c-item" href="tel:+91-96013 13243">
             <IoCall size={25} />
-            <span>+91-74860 22431</span>
+            <span>+91-96013 13243</span>
           </a>
-          <a className="c-item" href="tel:+91-74860 22431">
+          <a className="c-item" href="tel:+91-96878 31482">
             <IoCall size={25} />
 
-            <span>+91-74860 22431</span>
+            <span>+91-96878 31482</span>
           </a>
         </div>
       </div>
@@ -31,29 +31,18 @@ const ContactInfo = () => {
           <a className="c-item" href="#">
             <IoLocationSharp size={25} />
             <span>
-              218, Kasturi Complex, Nr. Vishala Supreme, Opposite Torrent
-              Substation, Sp Ring Road, Nikol, Ahmedabad-382350, Gujarat, India
+            Plot No. - 18,19,20  Avkar Warehouse Near Govindpura Chokdi,  
+            At- Vijapur , Dist- Mahesana  State – Gujarat , Pin-382870  
             </span>
           </a>
           <a className="c-item" href="mailto:info@marvelpack.com">
             <IoMail size={25} />
-            <span>info@marvelpack.com</span>
+            <span>Ikpackaging2209@gmail.com</span>
           </a>
         </div>
       </div>
 
-      <div className="c-section">
-        <h3>Manufacturing Unit</h3>
-        <div className="c-list">
-          <a className="c-item" href="#">
-            <IoLocationSharp size={25} />
-            <span>
-              R. Survey No: 205, Behind Billipura Bus Stop, Kuha-Pasunj Road,
-              Kuha, Ahmedabad- 382433 India
-            </span>
-          </a>
-        </div>
-      </div>
+   
     </div>
   );
 };

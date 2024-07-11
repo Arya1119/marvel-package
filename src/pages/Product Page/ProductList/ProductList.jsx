@@ -1,15 +1,18 @@
 import React from 'react'
 import "./ProductList.css"
+import ProductImg1 from "./../../../assets/Corrugated-box.jpg"
+import ProductImg2 from "./../../../assets/Printed-duplex.png"
+import ProductImg3 from "./../../../assets/PrintedCorrugated-box.png"
+import ProductImg4 from "./../../../assets/Printed-duplex2.png"
 
 const ProductList = () => {
 
     const products = [
-        {id:1,imagLink:"https://www.marvelpack.com/wp-content/uploads/2021/01/Vedik-Kapur-Design-.jpg",title:"Printed Boxes",color:"#859c44"},
-        {id:2,imagLink:"https://www.marvelpack.com/wp-content/uploads/2021/01/N95-PRO-MONTHLY-KIT.jpg",title:"Pharma Industry",color:"#D0D0D0"},
-        {id:3,imagLink:"https://www.marvelpack.com/wp-content/uploads/2021/01/Cheeze-Adda.jpg",title:"Food Packaging Box",color:"#CB9F70"},
-        {id:4,imagLink:"https://www.marvelpack.com/wp-content/uploads/2021/01/VANTA-BLACK.jpg",title:"Electric Industry",color:"#D9DBDA"},
-        {id:5,imagLink:"https://www.marvelpack.com/wp-content/uploads/2021/01/Hi-Bolt-Industries-Pvt.Ltd_.jpg",title:"Engineering Industry",color:"#CCCCCC"},
-        {id:6,imagLink:"https://www.marvelpack.com/wp-content/uploads/2021/01/VINTAGE.jpg",title:"Metal Industry",color:"#C2AF97"},
+        {id:1,imagLink:ProductImg1,title:"Corrugated Box",color:"#D0D0D0"},
+        {id:2,imagLink:ProductImg2,title:"Printed Duplex Box",color:"#ff693afc"},
+        {id:3,imagLink:ProductImg3,title:"Printed Corrugated Box",color:"#D0D0D0"},
+        {id:3,imagLink:ProductImg4,title:"Printed Duplex Box",color:"#cdeb95"},
+      
     ]
   return (
     <section className='products-section'>

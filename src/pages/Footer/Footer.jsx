@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 import "./Footer.css";
-import WebLogo from './../../assets/ImageLogo.png';
+import WebLogo from "./../../assets/ImageLogo.png";
 import LocationIcon from "./../../assets/location.png";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { IoMdCall } from "react-icons/io";
@@ -23,34 +23,45 @@ const Footer = () => {
         </div>
         <div className="footer-section">
           <h2>Contacts</h2>
-          <a className='contact-item' href="tel:+91-74860 22431">
+          <a className="contact-item" href="tel:+91-96013 13243">
             <IoMdCall />
-            <span>+91-74860 22431</span>
+            <span>+91-96013 13243</span>
           </a>
-          <a className='contact-item' href="tel:+91-74860 22431">
+          <a className="contact-item" href="tel:+91-96878 31482">
             <IoMdCall />
-            <span>+91-74860 22431</span>
+            <span>+91-96878 31482</span>
           </a>
         </div>
         <div className="footer-section">
           <h2>Office</h2>
-          <a className='contact-item' href="#">
+          <a className="contact-item" href="#">
             <img src={LocationIcon} alt="location icon" />
-            <span>218, Kasturi Complex, Nr. Vishala Supreme, Opposite Torrent Substation, Sp Ring Road, Nikol, Ahmedabad-382350, Gujarat, India</span>
+            <span>
+              Plot No. - 18,19,20 Avkar Warehouse Near Govindpura Chokdi, At-
+              Vijapur , Dist- Mahesana State – Gujarat , Pin-382870
+            </span>
           </a>
         </div>
         <div className="footer-social">
-          <a href="#"><FaFacebook /></a>
-          <a href="#"><FaInstagram /></a>
-          <a href="#"><FaXTwitter /></a>
+          <a href="#">
+            <FaFacebook />
+          </a>
+          <a href="#">
+            <FaInstagram />
+          </a>
+          <a href="#">
+            <FaXTwitter />
+          </a>
         </div>
       </div>
       <hr />
       <div className="footer-bottom">
-        <span>&copy; {new Date().getFullYear()} Company. All rights reserved.</span>
+        <span>
+          &copy; {new Date().getFullYear()} Company. All rights reserved.
+        </span>
       </div>
     </div>
   );
-}
+};
 
 export default Footer;

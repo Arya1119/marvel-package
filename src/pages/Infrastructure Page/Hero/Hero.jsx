@@ -10,13 +10,13 @@ const Hero = () => {
             <h1>Infrastructure</h1>
              <div className='seperatore'></div>
              <p>
-             We have established a sound infrastructure.
+             We have set up a robust foundation.
              <br />
-             We have all the automatic machine in our production unit for faster production with the set quality norms.
+             Our production unit is equipped with automated machines that ensure faster production while adhering to quality standards.
              <br />
-             In addition to this, with the support of our talented professionals and well-equipped infra,
+             Moreover, thanks to our skilled professionals and well-equipped infrastructure,
              <br />
-             we have a strong relationship with clients in a short span of time.
+             we have built strong relationships with clients in a short period of time.
              </p>
             </div>
         </div>
