@@ -61,7 +61,7 @@ const Feature = () => {
                   );
                 })}
               </div>
-              <Button btnTittle={"GET A QUOTE"} />
+              <Button btnTittle={"GET A QUOTE"} webLink="/contact-us" />
             </div>
           </div>
         </div>

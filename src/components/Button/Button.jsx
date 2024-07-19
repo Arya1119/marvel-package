@@ -1,11 +1,12 @@
 import React from 'react'
 import "./Button.css"
 import { FaRegPaperPlane } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 
-const Button = ({btnTittle}) => {
+const Button = ({btnTittle,webLink}) => {
   return (
-    <a className='btn' href="#">{btnTittle}<FaRegPaperPlane /></a>
+    <Link className='btn' to={webLink} >{btnTittle}<FaRegPaperPlane /></Link>
   )
 }
 

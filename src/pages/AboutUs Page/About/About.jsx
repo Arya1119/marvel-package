@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import AboutPageImg from './../../../assets/about-page-img.png'
+import AboutPageImg from './../../../assets/ImageLogo.png'
 import { IoIosCheckmarkCircleOutline } from "react-icons/io";
 
 
@@ -8,7 +8,7 @@ const About = () => {
   return (
     <section className='about'>
     <div className="container">
-        <div className="about-us-img">
+        <div className="about-us-img" style={{backgroundColor:"#e4e4e4",borderRadius:"30px"}}>
             <img src={AboutPageImg} alt="about-us-imag"  />
         </div>
 

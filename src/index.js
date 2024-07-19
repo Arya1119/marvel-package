@@ -18,7 +18,7 @@ const router = createBrowserRouter(
   createRoutesFromChildren(
     // Defining routes
     <Route path='/' element={<App/>}> 
-      <Route path='' element={<Home/>} /> 
+      <Route path=''   element={<Home/>} /> 
       <Route path='about-us' element={<AboutUs/>} /> 
       <Route path='products' element={<ProductPage/>} /> 
       <Route path='infrastructure' element={<InfrastructurePage/>} />

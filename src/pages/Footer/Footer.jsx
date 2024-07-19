@@ -1,10 +1,11 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import "./Footer.css";
 import WebLogo from "./../../assets/ImageLogo.png";
 import LocationIcon from "./../../assets/location.png";
 import { Link } from "react-router-dom";
-import { FaFacebook, FaInstagram } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import {  FaInstagram } from "react-icons/fa";
+// import { FaXTwitter } from "react-icons/fa6";
 import { IoMdCall } from "react-icons/io";
 
 const Footer = () => {
@@ -43,15 +44,15 @@ const Footer = () => {
           </a>
         </div>
         <div className="footer-social">
-          <a href="#">
+          {/* <a href="#">
             <FaFacebook />
+          </a> */}
+          <a href="https://www.instagram.com/ikpackaging">
+            <FaInstagram  href="https://www.instagram.com/ikpackaging?igsh=MWQ5NTF5N3BmN3pxbw=="/>
           </a>
-          <a href="#">
-            <FaInstagram />
-          </a>
-          <a href="#">
+          {/* <a href="#">
             <FaXTwitter />
-          </a>
+          </a> */}
         </div>
       </div>
       <hr />

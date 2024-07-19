@@ -53,7 +53,7 @@ const Skill = () => {
                 })}
               </div>
 
-              <Button btnTittle={"GET A QUOTE"} />
+              <Button btnTittle={"GET A QUOTE"} webLink={"/about-us"}/>
             </div>
           </div>
         </div>

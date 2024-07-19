@@ -19,7 +19,7 @@ const Header = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
-    <Box bg="white" px={4} boxShadow="sm" position="relative" w="100%" zIndex="1000" >
+    <Box bg="white" px={4} boxShadow="sm" position="sticky" top="0" zIndex="1000">
       <Flex h={16} alignItems="center" justifyContent="space-between" fontWeight={"500"}>
         <Box>
           <Image src={WebLogo} alt="logo" boxSize="63px" />
@@ -48,12 +48,12 @@ const Header = () => {
 
       {isOpen ? (
         <Box pb={4} display={{ md: "none" }} >
-          <Stack as="nav" spacing={4}>
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/about-us">About Us</NavLink>
-            <NavLink to="/infrastructure">Infrastructure</NavLink>
-            <NavLink to="/products">Products</NavLink>
-            <NavLink to="/contact-us">Contact Us</NavLink>
+          <Stack as="nav" spacing={4} >
+            <NavLink to="/" onClose={onClose}>Home</NavLink>
+            <NavLink to="/about-us" onClose={onClose}>About Us</NavLink>
+            <NavLink to="/infrastructure" onClose={onClose}>Infrastructure</NavLink>
+            <NavLink to="/products" onClose={onClose}>Products</NavLink>
+            <NavLink to="/contact-us" onClose={onClose}>Contact Us</NavLink>
           </Stack>
         </Box>
       ) : null}
@@ -61,7 +61,7 @@ const Header = () => {
   );
 };
 
-const NavLink = ({ to, children }) => (
+const NavLink = ({ to, children, onClose }) => (
   <Link
     as={RouterLink}
     to={to}
@@ -70,6 +70,7 @@ const NavLink = ({ to, children }) => (
     rounded="md"
     _hover={{ textDecoration: "none", bg: "gray.200" }}
     _activeLink={{ color: "#EEAE1D" }}
+    onClick={onClose} 
   >
     {children}
   </Link>

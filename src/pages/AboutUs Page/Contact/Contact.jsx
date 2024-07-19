@@ -10,7 +10,7 @@ const Contact = () => {
             <h1>Need Immediate Support Or Any Help?</h1>
             <p>Will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth the master-builder of human</p>
             {/* <Link className='btn' to="#">meet with us<FaRegPaperPlane /></Link> */}
-            <Button btnTittle={"meet with us"}/>
+            <Button btnTittle={"meet with us"} webLink="/contact-us"/>
         </div>
     </section>
   )

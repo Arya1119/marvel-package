@@ -1,0 +1,38 @@
+/* ScrollToTopButton.css */
+.scroll-to-top {
+    position: fixed;
+    bottom: 63px;
+    right: 30px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .scroll-button {
+    background-color: #eeae1d;
+    color: #ffffff;
+    border: none;
+    padding: 12px 21px;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+    opacity: 1.7;
+  }
+  
+  .scroll-button:hover {
+    background-color: #010408;
+    opacity: 1;
+    transform: translateY(-3px);
+  }
+  
+  .scroll-button:focus {
+    outline: none;
+  }
+  
+  .scroll-button:active {
+    transform: translateY(1px);
+  }
+  

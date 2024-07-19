@@ -24,8 +24,8 @@ const Unit = () => {
         <h2>The Units in Our Facility are:</h2>
         <div className="unit-box-row1">
 
-          {unitArray.map((item) => (
-            <div className="unit-box">
+          {unitArray.map((item,index) => (
+            <div className="unit-box" key={index}>
               <img src={item.image} alt={item.title} />
               <h3>{item.title}</h3>
             </div>
@@ -34,8 +34,8 @@ const Unit = () => {
 
         <div className="unit-box-row1">
 
-           {unitArray2.map((item) => (
-            <div className="unit-box">
+           {unitArray2.map((item,index) => (
+            <div className="unit-box" key={index}>
               <img src={item.image} alt={item.title} />
               <h3>{item.title}</h3>
             </div>
