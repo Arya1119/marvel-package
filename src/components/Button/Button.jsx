@@ -4,9 +4,13 @@ import { FaRegPaperPlane } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
 
-const Button = ({btnTittle,webLink}) => {
+const Button = ({btnTittle,webLink,icon=true}) => {
   return (
-    <Link className='btn' to={webLink} >{btnTittle}<FaRegPaperPlane /></Link>
+    <Link className='btn' to={webLink} >{btnTittle}
+    { (icon) &&
+      <FaRegPaperPlane />
+    }
+    </Link>
   )
 }
 

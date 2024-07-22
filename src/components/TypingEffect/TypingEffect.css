@@ -1,0 +1,14 @@
+.typing-effect {
+    border-right: 0.12em solid #eeae1d;
+    animation: blink 0.75s step-end infinite;
+  }
+  
+  @keyframes blink {
+    from, to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #eeae1d;
+    }
+  }
+  

@@ -19,7 +19,7 @@
 .btn > svg{
 
     position: relative;
-    top: 0px;
+    top: -4px;
     left: 7px;
     height: 20px;
     width: auto;

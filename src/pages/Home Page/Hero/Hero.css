@@ -1,0 +1,58 @@
+/* Hero.css */
+.hero-home-container {
+  background-image: url('./../../../assets/infrastructure.jpg'); /* Replace with your background image URL */
+  background-size: cover;
+  background-position: center;
+  height: 93.33vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  width: 100vw;
+  position: relative;
+}
+
+.hero-overlayout {
+  background-color: #000000;
+  opacity: 0.68;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.hero-content {
+  max-width: 800px;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+  animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color:  #eeae1d;
+}
+
+
+.hero-subtitle {
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+

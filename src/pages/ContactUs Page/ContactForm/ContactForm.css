@@ -43,6 +43,9 @@
   font-family: 'Roboto', Sans-serif;
   font-size: 16px;
   transition: border-color 0.3s, box-shadow 0.3s;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
 }
 
 .contact-form input:focus,
@@ -72,4 +75,13 @@
 .contact-form button:hover {
   background-color: #e57300;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.error {
+  color: red;
+  font-size: 0.875em;
+  margin-top: 0.25em;
+}
+
+.form-group {
+  margin-bottom: 1em;
 }

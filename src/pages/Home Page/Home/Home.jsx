@@ -1,21 +1,19 @@
 import React, { useEffect } from 'react'
 import "./Home.css"
-import Slider from '../Slider/Slider'
 import About from '../About/About'
 import Gallery from '../Gallery/Gallery'
 import Feature from '../Feature/Feature'
-import FormSection from '../FormSection/FormSection'
+import Hero from '../Hero/Hero'
 const Home = () => {
   useEffect(() => {
     document.title = 'Home Page';
 }, []);
   return (
     <>
-       <Slider/>
+       <Hero/>     
        <About/>
        <Gallery/> 
        <Feature/>
-       <FormSection/>
     </>
   )
 }
