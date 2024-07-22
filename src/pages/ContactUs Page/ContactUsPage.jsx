@@ -46,7 +46,7 @@ const ContactUsPage = () => {
     );
 
     gsap.fromTo(
-      '.contact-form',
+      '.contactForm',
       { opacity: 0, y: 50 },
       {
         opacity: 1,
@@ -54,7 +54,7 @@ const ContactUsPage = () => {
         duration: 1,
         ease: 'power2.out',
         scrollTrigger: {
-          trigger: '.contact-form',
+          trigger: '.contactForm',
           start: 'top 80%',
           once: true,
           delay: 0.3,
@@ -88,7 +88,7 @@ const ContactUsPage = () => {
       <div className="contactInfo">
         <ContactInfo />
       </div>
-      <div className="contact-form">
+      <div className="contactForm">
         <ContactForm />
       </div>
       <div className="map">

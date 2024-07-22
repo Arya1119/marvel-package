@@ -15,7 +15,7 @@ const Home = () => {
 
     // GSAP animations
     gsap.fromTo(
-      '.hero',
+      '.hero-home',
       { opacity: 0, y: -50, scale: 1.1 },
       {
         opacity: 1,
@@ -24,7 +24,7 @@ const Home = () => {
         duration: 1.2,
         ease: 'power3.out',
         scrollTrigger: {
-          trigger: '.hero',
+          trigger: '.hero-home',
           start: 'top 80%',
           once: true,
         },
@@ -88,7 +88,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="hero">
+      <div className="hero-home">
         <Hero />
       </div>
       <div className="about">
