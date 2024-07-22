@@ -24,3 +24,12 @@
     height: 20px;
     width: auto;
 }
+
+.btn:focus {
+    outline: none; /* Removes default focus outline */
+}
+
+/* Add an optional box-shadow effect */
+.btn:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}

@@ -7,9 +7,9 @@ import Skill from './../../../assets/skill.jpg';
 
 const Feature = () => {
   const barDetails = [
-    { barTitle: "Qualitative Products", progress: 100 },
-    { barTitle: "Positive Records", progress: 100 },
-    { barTitle: "Economical Price Range", progress: 100 },
+    {id:1, barTitle: "Qualitative Products", progress: 100 },
+    {id:2, barTitle: "Positive Records", progress: 100 },
+    {id:3, barTitle: "Economical Price Range", progress: 100 },
   ];
 
   return (
@@ -52,9 +52,9 @@ const Feature = () => {
             </div>
             <div className="progress-bar-text">
               <div className="progress-skill">
-                {barDetails.map((item) => {
+                {barDetails.map((item,index) => {
                   return (
-                    <ProgressBar
+                    <ProgressBar key={index}
                       barTitle={item.barTitle}
                       progress={item.progress}
                     />

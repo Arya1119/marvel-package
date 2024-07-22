@@ -6,9 +6,9 @@ import ProgressBar from "./../../../components/ProgressBar/ProgressBar";
 
 const Skill = () => {
   const barDetails = [
-    { barTitle: "Prompt delivery", progress: 100 },
-    { barTitle: "Excellent transport & logistic facility", progress: 100 },
-    { barTitle: "Dexterous team of professionals", progress: 100 },
+    {id:1, barTitle: "Prompt delivery", progress: 100 },
+    {id:2, barTitle: "Excellent transport & logistic facility", progress: 100 },
+    {id:3, barTitle: "Dexterous team of professionals", progress: 100 },
   ];
 
   return (
@@ -43,9 +43,9 @@ const Skill = () => {
             </div>
             <div className="progress-bar-text">
               <div className="progress-skill">
-                {barDetails.map((item) => {
+                {barDetails.map((item,index) => {
                   return (
-                    <ProgressBar
+                    <ProgressBar key={index}
                       barTitle={item.barTitle}
                       progress={item.progress}
                     />
