@@ -47,9 +47,9 @@ const Footer = () => {
           {/* <a href="#">
             <FaFacebook />
           </a> */}
-          <a href="https://www.instagram.com/ikpackaging">
+          {/* <a href="https://www.instagram.com/ikpackaging">
             <FaInstagram  href="https://www.instagram.com/ikpackaging?igsh=MWQ5NTF5N3BmN3pxbw=="/>
-          </a>
+          </a> */}
           {/* <a href="#">
             <FaXTwitter />
           </a> */}

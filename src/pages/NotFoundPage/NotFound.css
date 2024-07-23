@@ -1,0 +1,46 @@
+/* General styles for the container */
+.notFoundSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Error message styles */
+.notFoundSection .notFounderror {
+  font-size: 10vw; /* Use vw for responsive font size */
+  color: #ffd744;
+    text-shadow: 1px 1px 1px #ff6f0f, 2px 2px 1px #FF6F0F, 3px 3px 1px #ff6f0f, 4px 4px 1px #ff6f0f, 5px 5px 1px #ff6f0f, 6px 6px 1px #ff6f0f, 7px 7px 1px #ff6f0f, 8px 8px 1px #ff6f0f, 25px 25px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Page description styles */
+.notFoundpage {
+  margin: 2rem 0;
+  font-size: 1.25rem; /* Responsive font size */
+  font-weight: 600;
+  color: #444;
+}
+
+/* Back to home button styles */
+.notFoundback-home {
+  display: inline-block;
+  border: 2px solid #222;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0.75rem 1rem 0.6rem;
+  transition: all 0.2s linear;
+  box-shadow: 0 15px 15px -11px rgba(0, 0, 0, 0.4);
+  background: #222;
+  border-radius: 6px;
+  text-decoration: none; /* Remove underline */
+}
+
+.notFoundback-home:hover {
+  background: #222;
+  color: #ddd;
+}

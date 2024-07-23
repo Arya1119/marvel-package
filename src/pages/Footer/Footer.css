@@ -99,14 +99,10 @@ hr {
 
 @media screen and (max-width: 1040px) {
   .footer {
-    /* flex-direction: column;
-    align-items: center; */
+    
     display: none;
   }
-  /* .footer-section {
-    text-align: center;
-    align-items: center;
-  } */
+ 
   .footer-container{
     padding: 20px;
   }

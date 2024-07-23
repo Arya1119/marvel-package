@@ -10,6 +10,7 @@ import ProductPage from './pages/Product Page/ProductPage';
 import InfrastructurePage from './pages/Infrastructure Page/InfrastructurePage';
 import ContactUsPage from './pages/ContactUs Page/ContactUsPage';
 import { ChakraProvider } from '@chakra-ui/react'
+import NotFound from './pages/NotFoundPage/NotFound';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -18,11 +19,12 @@ const router = createBrowserRouter(
   createRoutesFromChildren(
     // Defining routes
     <Route path='/' element={<App/>}> 
-      <Route path=''   element={<Home/>} /> 
+      <Route path=''    element={<Home/>} /> 
       <Route path='about-us' element={<AboutUs/>} /> 
       <Route path='products' element={<ProductPage/>} /> 
       <Route path='infrastructure' element={<InfrastructurePage/>} />
       <Route path='contact-us' element={<ContactUsPage/>} />
+      <Route path='*'  element={<NotFound/>} />
     </Route>
   )
 );

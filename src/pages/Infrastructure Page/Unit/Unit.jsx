@@ -3,7 +3,6 @@ import "./Unit.css";
 import PDIcon from "./../../../assets/swatchbook.png";
 import QTIcon from "./../../../assets/like.png";
 import RNDIcon from "./../../../assets/femenine.png";
-
 import PUIcon from "./../../../assets/open-cardboard-box.png";
 import WHIcon from "./../../../assets/warehouse.png";
 
@@ -23,18 +22,15 @@ const Unit = () => {
       <div className="unit-container">
         <h2>The Units in Our Facility are:</h2>
         <div className="unit-box-row1">
-
-          {unitArray.map((item,index) => (
+          {unitArray.map((item, index) => (
             <div className="unit-box" key={index}>
               <img src={item.image} alt={item.title} />
               <h3>{item.title}</h3>
             </div>
           ))}
         </div>
-
         <div className="unit-box-row1">
-
-           {unitArray2.map((item,index) => (
+          {unitArray2.map((item, index) => (
             <div className="unit-box" key={index}>
               <img src={item.image} alt={item.title} />
               <h3>{item.title}</h3>

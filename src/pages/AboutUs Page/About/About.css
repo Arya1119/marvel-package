@@ -4,7 +4,7 @@
 }
 .container{
     max-width: 1169px;
-    margin: 80px auto;
+    margin: 35px auto;
     display: flex;
     flex-wrap: nowrap;
     gap: 20px;
