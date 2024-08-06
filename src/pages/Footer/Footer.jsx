@@ -4,8 +4,6 @@ import "./Footer.css";
 import WebLogo from "./../../assets/ImageLogo.png";
 import LocationIcon from "./../../assets/location.png";
 import { Link } from "react-router-dom";
-import {  FaInstagram } from "react-icons/fa";
-// import { FaXTwitter } from "react-icons/fa6";
 import { IoMdCall } from "react-icons/io";
 
 const Footer = () => {

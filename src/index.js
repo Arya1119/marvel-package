@@ -1,37 +1,80 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import Home from './pages/Home Page/Home/Home';
 import reportWebVitals from './reportWebVitals';
-import { Route, RouterProvider, createBrowserRouter, createRoutesFromChildren } from 'react-router-dom'; // Importing routing-related pages from react-router-dom
-import AboutUs from './pages/AboutUs Page/AboutUs/AboutUs';
-import ProductPage from './pages/Product Page/ProductPage';
-import InfrastructurePage from './pages/Infrastructure Page/InfrastructurePage';
-import ContactUsPage from './pages/ContactUs Page/ContactUsPage';
-import { ChakraProvider } from '@chakra-ui/react'
-import NotFound from './pages/NotFoundPage/NotFound';
+import { Route, RouterProvider, createBrowserRouter, createRoutesFromChildren } from 'react-router-dom';
+import { ChakraProvider } from '@chakra-ui/react';
+import Loader from './components/Loader/Loader'; // Import the Loader component
 
+// Lazy load your page components
+const Home = React.lazy(() => import('./pages/Home Page/Home/Home'));
+const AboutUs = React.lazy(() => import('./pages/AboutUs Page/AboutUs/AboutUs'));
+const ProductPage = React.lazy(() => import('./pages/Product Page/ProductPage'));
+const InfrastructurePage = React.lazy(() => import('./pages/Infrastructure Page/InfrastructurePage'));
+const ContactUsPage = React.lazy(() => import('./pages/ContactUs Page/ContactUsPage'));
+const NotFound = React.lazy(() => import('./pages/NotFoundPage/NotFound'));
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter(
-  // Creating routes from children pages
   createRoutesFromChildren(
-    // Defining routes
     <Route path='/' element={<App/>}> 
-      <Route path=''    element={<Home/>} /> 
-      <Route path='about-us' element={<AboutUs/>} /> 
-      <Route path='products' element={<ProductPage/>} /> 
-      <Route path='infrastructure' element={<InfrastructurePage/>} />
-      <Route path='contact-us' element={<ContactUsPage/>} />
-      <Route path='*'  element={<NotFound/>} />
+      <Route 
+        path='' 
+        element={
+          <Suspense fallback={<Loader />}>
+            <Home/>
+          </Suspense>
+        } 
+      /> 
+      <Route 
+        path='about-us' 
+        element={
+          <Suspense fallback={<Loader />}>
+            <AboutUs/>
+          </Suspense>
+        } 
+      /> 
+      <Route 
+        path='products' 
+        element={
+          <Suspense fallback={<Loader />}>
+            <ProductPage/>
+          </Suspense>
+        } 
+      /> 
+      <Route 
+        path='infrastructure' 
+        element={
+          <Suspense fallback={<Loader />}>
+            <InfrastructurePage/>
+          </Suspense>
+        } 
+      />
+      <Route 
+        path='contact-us' 
+        element={
+          <Suspense fallback={<Loader />}>
+            <ContactUsPage/>
+          </Suspense>
+        } 
+      />
+      <Route 
+        path='*'  
+        element={
+          <Suspense fallback={<Loader />}>
+            <NotFound/>
+          </Suspense>
+        } 
+      />
     </Route>
   )
 );
+
 root.render(
   <React.StrictMode>
     <ChakraProvider>
-    <RouterProvider router={router}/>
+      <RouterProvider router={router}/>
     </ChakraProvider>
   </React.StrictMode>
 );
